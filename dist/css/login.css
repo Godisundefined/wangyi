@@ -1,0 +1,437 @@
+@charset "UTF-8";
+/*==================清样式，清间距=======================*/
+body, h1, h2, h3, h4, h5, h6, p, a, img, input, ul, li, ol, dl, dt, dd {
+  padding: 0;
+  margin: 0; }
+
+ul, ol {
+  list-style: none; }
+
+img {
+  display: block;
+  border: 0; }
+
+input {
+  outline: none;
+  box-sizing: border-box; }
+
+/*=================定义全局样式===============*/
+body {
+  font-size: 12px;
+  color: #333;
+  background: #f6f6f6;
+  font-family: "微软雅黑"; }
+
+/*=================定义超级链接=================*/
+a {
+  text-decoration: none;
+  color: #666; }
+
+a:hover {
+  text-decoration: none;
+  color: red; }
+
+/*=================公共样式===============*/
+.w {
+  width: 1000px;
+  margin: 0 auto; }
+
+.l {
+  float: left; }
+
+.r {
+  float: right; }
+
+.c {
+  cursor: pointer; }
+
+/*=================iconfont===============*/
+@font-face {
+  font-family: 'iconfont';
+  src: url("../font/iconfont.eot");
+  src: url("../font/iconfont.eot?#iefix") format("embedded-opentype"), url("../font/iconfont.woff") format("woff"), url("../font/iconfont.ttf") format("truetype"), url("../font/iconfont.svg#iconfont") format("svg"); }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+#header {
+  height: 100px;
+  background: white;
+  border-bottom: 1px solid #e8e8ea; }
+  #header .header_con {
+    height: 100px;
+    position: relative; }
+    #header .header_con a {
+      position: absolute;
+      left: 0;
+      top: 20px;
+      width: 330px;
+      height: 60px;
+      line-height: 60px; }
+    #header .header_con .topimg {
+      float: right; }
+
+#login .loggin_banner {
+  position: relative;
+  height: 520px; }
+  #login .loggin_banner .log {
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: 154px;
+    width: 400px;
+    height: 203px; }
+  #login .loggin_banner #logincon {
+    width: 350px;
+    background: white;
+    position: absolute;
+    border: 1px solid #ccc;
+    right: 0;
+    top: 50px; }
+    #login .loggin_banner #logincon .contop {
+      width: 350px;
+      height: 52px;
+      line-height: 52px;
+      background: yellow;
+      font-size: 16px;
+      border-bottom: 1px solid #ddd;
+      background-color: #f8f8f8;
+      color: #333;
+      position: relative; }
+      #login .loggin_banner #logincon .contop b {
+        display: inline-block;
+        width: 0px;
+        height: 20px;
+        border-right: 1px solid #ddd;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: -10px; }
+      #login .loggin_banner #logincon .contop span {
+        float: left;
+        width: 174px;
+        height: 52px;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer; }
+        #login .loggin_banner #logincon .contop span:hover {
+          color: #e31436; }
+      #login .loggin_banner #logincon .contop .active {
+        color: #e31436; }
+    #login .loggin_banner #logincon .content_phone {
+      width: 350px;
+      box-sizing: border-box;
+      padding: 20px 40px 15px; }
+      #login .loggin_banner #logincon .content_phone form #suo {
+        height: 24px;
+        width: 100%;
+        padding: 0 0 10px 0; }
+        #login .loggin_banner #logincon .content_phone form #suo a {
+          display: inline-block;
+          float: right;
+          line-height: 14px;
+          height: 14px;
+          color: #e31436;
+          padding-left: 14px;
+          background: url(../imgs/ursicon.png) no-repeat;
+          background-position: 0 -95px; }
+      #login .loggin_banner #logincon .content_phone form .inputbox, #login .loggin_banner #logincon .content_phone form .content_email .password, #login .loggin_banner #logincon .content_email .content_phone form .password {
+        height: 34px;
+        line-height: 30px;
+        border: 1px solid #c5cddb;
+        background: #fff;
+        font-size: 12px;
+        border-radius: 2px;
+        margin-bottom: 16px; }
+        #login .loggin_banner #logincon .content_phone form .inputbox .phone, #login .loggin_banner #logincon .content_phone form .content_email .password .phone, #login .loggin_banner #logincon .content_email .content_phone form .password .phone {
+          width: 17px;
+          padding: 0 11px;
+          float: left;
+          text-align: center; }
+          #login .loggin_banner #logincon .content_phone form .inputbox .phone span, #login .loggin_banner #logincon .content_phone form .content_email .password .phone span, #login .loggin_banner #logincon .content_email .content_phone form .password .phone span {
+            display: inline-block;
+            width: 17px;
+            height: 18px;
+            margin-top: 8px;
+            background: url(../imgs/ursicon.png) no-repeat;
+            background-position: -36px -34px; }
+        #login .loggin_banner #logincon .content_phone form .inputbox input, #login .loggin_banner #logincon .content_phone form .content_email .password input, #login .loggin_banner #logincon .content_email .content_phone form .password input {
+          padding-left: 0;
+          height: 30px;
+          margin-top: 2px;
+          line-height: 30px;
+          font-size: 14px;
+          font-weight: normal;
+          width: 180px;
+          color: #c5cddb;
+          border: none; }
+      #login .loggin_banner #logincon .content_phone form .slider {
+        height: 26px;
+        border: 1px solid #ddd;
+        border-radius: 13px;
+        width: 268px;
+        background: #eee;
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 16px; }
+        #login .loggin_banner #logincon .content_phone form .slider .fg {
+          position: absolute;
+          top: 0;
+          left: 0; }
+          #login .loggin_banner #logincon .content_phone form .slider .fg img {
+            height: auto;
+            width: 60px;
+            cursor: pointer; }
+        #login .loggin_banner #logincon .content_phone form .slider .slider_text {
+          width: 220px;
+          height: 26px;
+          position: absolute;
+          left: 48px;
+          top: 0;
+          opacity: 1;
+          overflow: hidden;
+          color: #a8a8a8;
+          font-size: 12px;
+          text-align: center;
+          line-height: 26px; }
+      #login .loggin_banner #logincon .content_phone form .verify {
+        position: relative;
+        height: 34px;
+        width: 268px;
+        line-height: 30px;
+        border-radius: 2px;
+        border: 1px solid #c5cddb;
+        background: #fff; }
+        #login .loggin_banner #logincon .content_phone form .verify .ver {
+          height: 30px;
+          margin: 2px 0; }
+          #login .loggin_banner #logincon .content_phone form .verify .ver .shuru {
+            width: 130px;
+            height: 30px;
+            font-size: 14px;
+            padding-left: 8px;
+            border: 0; }
+          #login .loggin_banner #logincon .content_phone form .verify .ver .phone_btn {
+            position: absolute;
+            width: 96px;
+            height: 34px;
+            background: #eee;
+            text-align: center;
+            color: #333;
+            right: 0;
+            top: 0;
+            border: 0;
+            border-left: #d5d5d5 solid 1px;
+            line-height: 34px; }
+      #login .loggin_banner #logincon .content_phone form .Log {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        height: 36px;
+        background-color: #e31436;
+        border-radius: 2px;
+        line-height: 36px;
+        font-size: 14px;
+        width: 100%;
+        cursor: pointer;
+        text-align: center;
+        color: white;
+        border: none; }
+        #login .loggin_banner #logincon .content_phone form .Log:hover {
+          background: #f5345e; }
+      #login .loggin_banner #logincon .content_phone form .unlog {
+        padding: 0 0 15px 0;
+        height: 16px;
+        line-height: 16px; }
+        #login .loggin_banner #logincon .content_phone form .unlog .un_le {
+          float: left;
+          display: block;
+          position: relative;
+          width: 104px;
+          height: 16px; }
+          #login .loggin_banner #logincon .content_phone form .unlog .un_le i {
+            margin-left: 18px;
+            font-style: normal; }
+          #login .loggin_banner #logincon .content_phone form .unlog .un_le b {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            cursor: pointer;
+            border: 1px solid #aaa;
+            color: #999;
+            background: url(../imgs/cc.png) no-repeat; }
+            #login .loggin_banner #logincon .content_phone form .unlog .un_le b:hover {
+              background-position: -330px -92px; }
+        #login .loggin_banner #logincon .content_phone form .unlog .un_ri {
+          height: 16px;
+          cursor: pointer;
+          color: #999;
+          line-height: 16px; }
+    #login .loggin_banner #logincon .content_email {
+      display: none;
+      width: 350px;
+      box-sizing: border-box;
+      padding: 20px 40px 15px; }
+      #login .loggin_banner #logincon .content_email .inputbox, #login .loggin_banner #logincon .content_email .password {
+        height: 34px;
+        line-height: 30px;
+        border: 1px solid #d5d5d5;
+        background: #fff;
+        font-size: 12px;
+        border-radius: 2px;
+        margin-bottom: 16px; }
+        #login .loggin_banner #logincon .content_email .inputbox .phone, #login .loggin_banner #logincon .content_email .password .phone {
+          width: 17px;
+          padding: 0 11px;
+          float: left;
+          text-align: center; }
+          #login .loggin_banner #logincon .content_email .inputbox .phone span, #login .loggin_banner #logincon .content_email .password .phone span {
+            display: inline-block;
+            width: 17px;
+            height: 18px;
+            margin-top: 8px;
+            background: url(../imgs/ursicon.png) no-repeat;
+            background-position: -36px -34px; }
+        #login .loggin_banner #logincon .content_email .inputbox input, #login .loggin_banner #logincon .content_email .password input {
+          padding-left: 0;
+          height: 30px;
+          margin-top: 2px;
+          line-height: 30px;
+          font-size: 14px;
+          font-weight: normal;
+          width: 180px;
+          color: #c5cddb;
+          border: none; }
+      #login .loggin_banner #logincon .content_email .password .phone span {
+        background: url(../imgs/ursicon.png) no-repeat;
+        background-position: -68px -34px; }
+      #login .loggin_banner #logincon .content_email .Log {
+        margin-top: 16px;
+        margin-bottom: 10px;
+        height: 36px;
+        background-color: #e31436;
+        border-radius: 2px;
+        line-height: 36px;
+        font-size: 14px;
+        width: 100%;
+        cursor: pointer;
+        text-align: center;
+        color: white;
+        border: none; }
+        #login .loggin_banner #logincon .content_email .Log:hover {
+          background: #f5345e; }
+      #login .loggin_banner #logincon .content_email .unlog {
+        padding: 0 0 15px 0;
+        height: 16px;
+        line-height: 16px; }
+        #login .loggin_banner #logincon .content_email .unlog .un_le {
+          float: left;
+          display: block;
+          position: relative;
+          width: 104px;
+          height: 16px; }
+          #login .loggin_banner #logincon .content_email .unlog .un_le i {
+            margin-left: 18px;
+            font-style: normal; }
+          #login .loggin_banner #logincon .content_email .unlog .un_le b {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            cursor: pointer;
+            border: 1px solid #aaa;
+            color: #999;
+            background: url(../imgs/cc.png) no-repeat; }
+            #login .loggin_banner #logincon .content_email .unlog .un_le b:hover {
+              background-position: -330px -92px; }
+        #login .loggin_banner #logincon .content_email .unlog .un_ri {
+          height: 16px;
+          cursor: pointer;
+          color: #999;
+          line-height: 16px; }
+    #login .loggin_banner #logincon .foot {
+      width: 270px;
+      height: 20px;
+      background-color: #f8f8f8;
+      padding: 10px 40px;
+      border-top: 1px solid #ddd;
+      font-size: 14px;
+      position: relative; }
+      #login .loggin_banner #logincon .foot .thirdlogin {
+        float: left;
+        width: 160px; }
+        #login .loggin_banner #logincon .foot .thirdlogin li {
+          float: left; }
+          #login .loggin_banner #logincon .foot .thirdlogin li a {
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            margin-right: 10px;
+            background: url(../imgs/icon1.png) no-repeat; }
+        #login .loggin_banner #logincon .foot .thirdlogin li:nth-of-type(1) a {
+          background-position: -760px -401px; }
+        #login .loggin_banner #logincon .foot .thirdlogin li:nth-of-type(2) a {
+          background-position: -792px -401px; }
+        #login .loggin_banner #logincon .foot .thirdlogin li:nth-of-type(3) a {
+          background-position: -824px -401px; }
+        #login .loggin_banner #logincon .foot .thirdlogin li:nth-of-type(4) a {
+          background-position: -856px -401px; }
+      #login .loggin_banner #logincon .foot .gotoreg {
+        display: block;
+        float: right;
+        width: 108px;
+        color: #e31436;
+        line-height: 22px;
+        cursor: pointer;
+        position: relative; }
+        #login .loggin_banner #logincon .foot .gotoreg span {
+          line-height: 22px;
+          position: absolute;
+          top: 4px;
+          right: 5px;
+          height: 14px;
+          width: 15px;
+          display: inline-block;
+          background: url(../imgs/icon1.png) no-repeat;
+          background-position: -898px -406px; }
+
+.webfoot {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 100px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  background: #fff; }
+  .webfoot .aboutwe {
+    position: relative;
+    line-height: 26px;
+    color: #666; }
+    .webfoot .aboutwe .sep {
+      margin: 0 20px; }
+    .webfoot .aboutwe .m-license {
+      margin: 0 20px;
+      font-size: 12px;
+      color: #999; }
+    .webfoot .aboutwe img {
+      display: inline-block;
+      vertical-align: middle; }
+    .webfoot .aboutwe .no {
+      height: 20px;
+      line-height: 20px;
+      font-size: 12px;
+      margin-right: 10px; }
+    .webfoot .aboutwe .plc img {
+      margin-top: 5px;
+      display: inline-block;
+      height: 30px; }
